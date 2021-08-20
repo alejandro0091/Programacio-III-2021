@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion</title>
+</head>
+<body>
+    <head>
+        <h1>
+            Inscripcion en el Curso
+        </h1>
+    </head>
+    <nav class="menu">
+        <ul>
+          <li><a href="Index.html">Inicio</a></li>
+          <li><a href="cursos.html">Curso</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    <section>
+        <fieldset>
+            <legend>Ingrese los Datos Solicitados</legend>
+        
+        
+        <form action="pago.html" method="post">
+            <label for="cuil">CUIL</label>
+            <input type="text" name="cuil" placeholder="Ingrese su cuil sin guinones"><br><br>
+            <label for="nombreApellido">Nombre y Apellido</label>
+            <input type="text" name="nombreApellido" placeholder="Ingrese su nombre Completo"><br><br>
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" placeholder="0000-000000"><br><br>
+            <h3>Domicilio</h3>
+            <label for="calle">Calle</label>
+            <input type="text" name="calle" placeholder="Nombre de la calle">
+            <label for="numero">Calle</label>
+            <input type="text" name="numero" placeholder="Numero de vivienda">
+            <label for="localidad">Localidad</label>
+            <input type="text" name="localidad" placeholder="Localidad">
+            <label for="departamento">Departamento</label>
+            <input type="text" name="departamento" placeholder="Departamento">
+            <label for="provincia">Provincia</label>
+            <input type="text" name="provincia" placeholder="Provincia"><br><br>
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email" placeholder="ejemplo@gmail.com"><br><br>
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+            </select><br><br>
+            <label for="nacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="nacimiento"><br><br>
+            <label for="estadoCivil">Estado Civil</label>
+            <select name="estadoCivil" id="">
+                <option value="c">Casado/a</option>
+                <option value="s">Soltero/a</option>
+                <option value="d">Divorciado/a</option>
+            </select><br><br>
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="">
+                <option value="alumno">Alumno</option>
+                <option value="docente">Docente</option>
+            </select><br><br>
+            <button type="submit">Inscripcion</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </fieldset>
+    </section>
+
+    <footer style="text-align: center;">Almonacid -- Gramajo -- Leiva</footer>
+</body>
+</html>
