@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestionEstadoCurso</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Gestion de Estado de Curso</legend>
+        <form action="post">
+            <label for="nCurso"> Nombre del curso</label>
+            <input type="text" name="nCurso" id="nCurso"><br><br>
+            <label for="estadoCurso">Estado Curso</label><br>
+            <input type="radio" name="aprobado" id="aprobado" value="Aprobado">
+            <label for="aprobado">Aprobado</label><br>
+            <input type="radio" name="desaprobado" id="desaprobado" value="Desaprobado">
+            <label for="desaprobado">Desaprobado</label><br><br>
+            <label for="archivo">Archivo de Resolucion</label>
+            <input type="file" id="archivo" name="archivo"><br><br>
+            <label for="fechaR">Fecha</label>
+            <input type="date" name="fechaR" id="fechaR"><br><br>
+            <label for="nResolucion">Numero de Resolucion</label>
+            <input type="number" name="nResolucion" id="nResolucion"><br><br>
+            <button type="submit">Guardar</button>
+        </form>
+    </fieldset>
+    <footer style="text-align: center;">Almonacid -- Gramajo -- Leiva</footer>
+</body>
+</html>
