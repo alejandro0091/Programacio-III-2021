@@ -8,9 +8,7 @@
     opacity: 0.8;
 }
 
-nav{
-    margin-bottom: 2%;
-}
+
 .card{
     margin-bottom: 2%;
 }
@@ -19,7 +17,27 @@ nav{
     right: 0%;
 }
 
-.container-fluid{
-    padding-left: 0%;
-    padding-right: 0%;
+.container-fluid1{
+        width: 100%;
+        padding-right: 0%;
+        padding-left: 0%;
+        margin-right: auto;
+        margin-left: auto;
+}
+.card-header1{
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgb(51, 51, 60);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    color: white;
+    font-size: 150%;
+}
+
+section{
+   
+    padding: 2%;
+}
+.botones{
+    float:right;
+    margin-left: 1%;
 }
