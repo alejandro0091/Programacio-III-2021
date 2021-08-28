@@ -1,0 +1,25 @@
+.head{
+    height: 300px;
+    text-align: center;
+    color: white;
+    background-color: rgb(51, 51, 60);
+    padding-top: 100px;
+    background-image: url("../TP2/12595.jpg");
+    opacity: 0.8;
+}
+
+nav{
+    margin-bottom: 2%;
+}
+.card{
+    margin-bottom: 2%;
+}
+
+.enlace{
+    right: 0%;
+}
+
+.container-fluid{
+    padding-left: 0%;
+    padding-right: 0%;
+}
