@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generar Curso</title>
+    </head>
+    <body>
+            <fieldset>
+                <legend> Generar Curso </legend>
+                <form method="post">
+                        <label for="nombreCurso">Nombre Curso </label>
+                        <input type="text" name="nombreCurso" id="nombreCurso"  placeholder="Ingrese Nombre del Curso"><br><br>
+                        <label for="fechaPropuesta">Fecha de Propuesta Curso</label>
+                        <input type="date" name="fechaPropuesta" id="fechaPropuesta"><br><br>
+                        <label for="aprobacionDesaprobacion">Fecha de Aprobacion/Desaprobacion del Curso</label>
+                        <input type="date" name="aprobacionDesaprobacion" id="aprobacionDesaprobacion"><br><br>
+                        <label for="obejtivoCurso">Objetivo del Curso</label>
+                        <input type="text" name="objetivoCurso" id="obejtivoCurso"><br><br>
+                        <label for="modalidad">Modalidad</label>
+                        <select>
+                            <option value="virtual">Virtual</option>
+                            <option value="Presencial">Presencial</option>
+                            <option value="Mixto">Mixto</option>
+                        </select><br><br>
+                        <label for="costoCurso">Costo del Curso</label>
+                        <input type="text" name="costoCurso" id="costoCurso"><br><br>
+                        <label for="expositores">Expositor/es</label>
+                        <input type="text" name="expositores" id="expositores"><br><br>
+                        <label for="honorarios">Honorarios</label>
+                        <input type="text" name="honorarios" id="honorarios"><br><br>
+                        <label for="duracion">Duración</label>
+                        <input type="text" name="duracion" id="duracion"><br><br>
+                        <label for="fechaInicioCurso">Fecha de Incio del Curso</label>
+                        <input type="date" name="fechaInicioCurso" id="fechaInicioCurso"><br><br>
+                        <label for="fechaFinCurso">Fecha de Finalizacion del Curso</label>
+                        <input type="date" name="fechaFinCurso" id="fechaFinCurso"><br><br>
+                        <label for="cantMinima"> Cantidad minima de Alumnos</label>
+                        <input type="text" name="cantMinima" id="cantMinima"><br><br>
+                        <label for="cantMax"> Cantidad maxima de Alumnos</label>
+                        <input type="text" name="cantMax" id="cantMax"><br><br>
+                        
+                </form>
+            </fieldset>
+    </body>
+</html>
