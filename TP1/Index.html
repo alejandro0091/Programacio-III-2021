@@ -16,6 +16,37 @@
 </head>
 
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Descripcion del Curso Seleccionado</h5>
+
+        </div>
+        <div class="modal-body">
+          <div>
+            <p>Toda La Informacion del curso se encontrara aqui
+              Toda La Informacion del curso se encontrara aqui
+              Toda La Informacion del curso se encontrara aqui
+              Toda La Informacion del curso se encontrara aqui
+              Toda La Informacion del curso se encontrara aqui
+              Toda La Informacion del curso se encontrara aqui
+              Toda La Informacion del curso se encontrara aqui
+              Toda La Informacion del curso se encontrara aqui
+
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="inscripcion.html" class="btn btn-outline-dark botones">inscripción en el curso</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid head">
 
     <head>
@@ -35,9 +66,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="cursos.html">Curso</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Contacto</a>
           </li>
@@ -83,7 +112,12 @@
           <p class="card-text"><span>
               Programacion de paradigma orientado a Objeto (OOP)
             </span></p>
-          <a href="cursos.html" class="btn btn-outline-dark botones">Conocer mas del curso</a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-dark botones" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Conocer mas del curso
+          </button>
+
 
         </div>
       </div>
@@ -97,7 +131,10 @@
           <p class="card-text"><span>
               Curso en configuracion de distintos dispositivos enrutadores (Microtik - TP-Link )
             </span></p>
-          <a href="cursos.html" class="btn btn-outline-dark botones">Conocer mas del curso</a>
+          <button type="button" class="btn btn-outline-dark botones" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Conocer mas del curso
+          </button>
 
         </div>
       </div>
@@ -111,9 +148,10 @@
           <p class="card-text"><span>
               Diferencias entre Tipos de B.D. (creacion y conexion)
             </span></p>
-          <div class="enlace">
-            <a href="cursos.html" class="btn btn-outline-dark botones">Conocer mas del curso</a>
-          </div>
+          <button type="button" class="btn btn-outline-dark botones" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Conocer mas del curso
+          </button>
 
 
         </div>
@@ -222,6 +260,9 @@
     </footer>
 
   </div>
+  <script>
+
+  </script>
 </body>
 
 </html>

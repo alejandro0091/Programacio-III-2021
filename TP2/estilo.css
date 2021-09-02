@@ -32,7 +32,17 @@
     color: white;
     font-size: 150%;
 }
-
+.modal-header{
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgb(51, 51, 60);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    color: white;
+    font-size: 150%;
+}
+.modal-content{
+    height: 150%!important;
+}
 section{
    
     padding: 2%;
