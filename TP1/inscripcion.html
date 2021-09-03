@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../TP2/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <title>Inscripcion</title>
+</head>
+
+<body>
+    <div class="container-fluid head">
+
+        <head>
+            <!-- <img src="../TP2/logo.png" class="img-fluid" alt="...">-->
+            <h1>
+                Gestión de Cursos de Posgrado-Facultad de Tecnología y
+                Cs Aplicadas
+            </h1>
+        </head>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cursos.html">Curso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="creacion_curso.html">Agregar un Curso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="registro_curso.html">Registro de Cursos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Salir</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Ingrese el curso" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container body1">
+            <div class="card">
+                <div class="card-header1">
+                    Ingrese los Datos Solicitados
+                </div>
+                <div class="card-body">
+                    <form action="pago.html" method="post" class="row g-3">
+                        <div class="col-md-4">
+                            <label for="cuil" class="form-label">Cuil</label>
+                            <input type="text" class="form-control" id="cuil" placeholder="Ingrese Su CUIL sin Guiones">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="nombreApellido" placeholder="Nombre Completo">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="0000-000000">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="calle" class="form-label">Calle</label>
+                            <input type="text" class="form-control" id="calle" placeholder="Nombre de la calle">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="numero" class="form-label">N°Vivienda</label>
+                            <input type="number" class="form-control" id="numero" placeholder="Numero de vivienda">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="localidad" class="form-label">Localidad</label>
+                            <input type="text" class="form-control" id="localidad" placeholder="Localidad">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="departamento" class="form-label">Departamento</label>
+                            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="provincia" class="form-label">Provincia</label>
+                            <input type="text" class="form-control" id="provincia" placeholder="Provincia">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="email" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="sexo" class="form-label">Sexo</label>
+                            <select id="sexo" class="form-select">
+                                <option selected>Choose...</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="masculino">Masculino</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="nacimiento">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="estadoCivil" class="form-label">Estado Civil</label>
+                            <select id="estadoCivil" class="form-select">
+                                <option value="c">Casado/a</option>
+                                <option value="s">Soltero/a</option>
+                                <option value="d">Divorciado/a</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <select id="categoria" class="form-select">
+                                <option value="alumno">Alumno</option>
+                                <option value="docente">Docente</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <button type="reset" class="btn btn-outline-dark botones">Cancelar</button>
+                            <button type="submit" class="btn btn-outline-dark botones">Inscripcion</button>
+                            
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--  
+            
+            <h3>Domicilio</h3>
+
+
+            
+
+            <label for="estadoCivil">Estado Civil</label>
+            <select name="estadoCivil" id="">
+                <option value="c">Casado/a</option>
+                <option value="s">Soltero/a</option>
+                <option value="d">Divorciado/a</option>
+            </select><br><br>
+
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="">
+                <option value="alumno">Alumno</option>
+                <option value="docente">Docente</option>
+            </select><br><br>
+
+            <button type="submit">Inscripcion</button>
+            <button type="reset">Cancelar</button>-->
+
+    </section>
+
+    <div class="container-fluid1">
+        <footer class="bg-dark text-center text-lg-start text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row mt-4">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">See other books</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white"><i
+                                        class="fas fa-book fa-fw fa-sm me-2"></i>Bestsellers</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>All
+                                    books</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>Our
+                                    authors</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Execution of the contract</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-white"><i
+                                        class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Supply</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><i
+                                        class="fas fa-backspace fa-fw fa-sm me-2"></i>Returns</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><i
+                                        class="far fa-file-alt fa-fw fa-sm me-2"></i>Regulations</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy
+                                    policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Publishing house</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-white">The BookStore</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">123 Street</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">05765 NY</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Send us
+                                    a book</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Write to us</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in
+                                    purchasing</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><i
+                                        class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the order status</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the
+                                    newsletter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2021 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+</body>
+
+</html>
