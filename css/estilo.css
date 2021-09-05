@@ -52,3 +52,96 @@ section{
 .modal-content{
     height: 150%!important;
 }
+
+
+.contenedor-acceso{
+    margin:0;
+    padding:0;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    height: 650px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.login-box{
+    width: 520px;
+    height 620px;
+    position: absolute;
+    background:  #000;
+    color: #ffff;
+    padding: 70px 30px;
+    box-shadow: 0 0 6px 0 rgba(255,255, 255, 0.8);
+    border-radius: 10px;
+
+}
+.login-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    position:absolute;
+    top:-50px;
+    left: calc(50% - 50px);
+
+}
+.login-box h1{
+    margin:0;
+    padding: 0 0 20px;
+    text-align:center;
+    font-size:32px;
+
+}
+.login-box label{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+    display:block;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom:20px;
+    padding: 10px 10px 10px 5px;
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color:#fff;
+    font-size:16px;
+
+}
+
+.login-box button{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    width: 100%;
+    margin: 10px auto;
+    border: none;
+    outline:none;
+    height:40px;
+    background: #0f0c29;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+ }
+
+
+
+ .login-box a {
+    text-decoration:none;
+    font-size: 18px;
+    line-height:20px;
+    color:darkgrey;
+ }
+ .login-box a:hover {
+    color:#fff;
+ }
+ .warnings{
+    width: 200px;
+    text-align: center;
+    margin:auto;
+    color: #B06AB3;
+    padding-top: 20px;
+ }
