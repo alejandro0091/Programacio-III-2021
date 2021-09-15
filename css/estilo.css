@@ -76,6 +76,25 @@ section{
     border-radius: 10px;
 
 }
+.registro-login{
+    width: 520px;
+    height 620px;
+    position: absolute;
+    background:  #000;
+    color: #ffff;
+    padding: 70px 30px;
+    box-shadow: 0 0 6px 0 rgba(255,255, 255, 0.8);
+    border-radius: 10px;
+}
+.registro-login .avatar{
+width: 100px;
+    height: 100px;
+    border-radius:50%;
+    position:absolute;
+    top:-50px;
+    left: calc(50% - 50px);
+
+}
 .login-box .avatar{
     width: 100px;
     height: 100px;
