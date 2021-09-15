@@ -4,134 +4,205 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario Nuevo Curso</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+        </script>
+        <title>Registro Curso</title>
     </head>
 
     <body>
-       <head>
-            <h1>
-                Cursos Registrados
-            </h1>
-       </head>
+        <div class="container-fluid head">
 
-        <nav class="menu">
-        <ul>
-          <li><a href="Index.html">Inicio</a></li>
+          <head>
+              
+              <h1>
+                  Gestión de Cursos de Posgrado-Facultad de Tecnología y
+                  Cs Aplicadas
+              </h1>
+          </head>
+      </div>
 
-        </ul>
-      </nav>
-        <table style = "width: 100%">
-            <th>Nombre Curso</th>
-            <th>Modalidad</th>
-            <th>Docentes a Cargo</th>
-            <th>Duración</th>
-            <th>Fecha de Inicio</th>
-            <th>Fecha de Finalización</th>
-            <th>Costo</th>
-          </tr>
-          <tr>
-            <td>Programación en Java</td>
-            <td>Virtual</td>
-            <td>Lic. Daniel Rivas</td>
-            <td>4 meses</td>
-            <td>20/08/2021</td>
-            <td>20/12/2021</td>
-            <td>$2500</td>
-          </tr>
-          <tr>
-             <td>Base de Datos</td>
-            <td>Presencial</td>
-            <td>Lic. Soledad Bustos</td>
-            <td>2 meses</td>
-            <td>23/09/2021</td>
-            <td>30/11/2021</td>
-            <td>$3500</td>
-          </tr>
-
-        </table>
-
-
-
-        <div class="container-fluid1">
-          <footer class="bg-dark text-center text-lg-start text-white">
-            <!-- Grid container -->
-            <div class="container p-4">
-              <!--Grid row-->
-              <div class="row mt-4">
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Facultad de Tecnología</h5>
-      
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>AV. Maximio Victoria 604</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>S. F. del Valle de Catamarca</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>CP: 4700</a>
-                    </li>
-                  </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cursos.html">Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="creacion_curso.html">Agregar un Curso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="registro_curso.html">Registro de Cursos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Login</a></li>
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Salir</a></li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Ingrese el curso" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-                <!--Grid column-->
-      
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Departamentos</h5>
-      
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Tecnología</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Ciencias Aplicadas</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>SIU GUARANI</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Aula Virtual </a>
-                    </li>
-                  </ul>
-                </div>
-                <!--Grid column-->
-      
-             
-      
-                <!--Grid column-->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">CONTACTO</h5>
-      
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Telefono: 0383 443-5112</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Facebook</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Instagram</a>
-                    </li>
-                  </ul>
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row-->
-            </div>
-            <!-- Grid container -->
-      
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-              © 2021 Copyright:
-              <a class="text-white" href="ProgrIII">Programación III</a>
-            </div>
-            <!-- Copyright -->
-          </footer>
-      
         </div>
+    </nav>
+    <section>
+      <div class= "container body1">
+          <div class="card">
+              <div class="card-header1">
+                  Registro de Cursos Dictados
+              </div>
+              <div class="card-body">
+
+                  <table class="table table-hover">
+                      <thead>
+                        <tr>
+                            <th scope="col">Nombre Curso</th>
+                            <th scope="col">Modalidad</th>
+                            <th scope="col">Docentes a Cargo</th>
+                            <th scope="col">Duración</th>
+                            <th scope="col">Fecha de Inicio</th>
+                            <th scope="col">Fecha de Finalización</th>
+                            <th scope="col">Costo</th>
+                            <th scope="col">Editar/Eliminar </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programación en Java</td>
+                            <td>Virtual</td>
+                            <td>Lic. Daniel Rivas</td>
+                            <td>4 meses</td>
+                            <td>20/08/2021</td>
+                            <td>20/12/2021</td>
+                            <td>$2500</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                <button type="button" class="btn btn-secondary btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Base de Datos</td>
+                            <td>Presencial</td>
+                            <td>Lic. Soledad Bustos</td>
+                            <td>2 meses</td>
+                            <td>23/09/2021</td>
+                            <td>30/11/2021</td>
+                            <td>$3500</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                <button type="button" class="btn btn-secondary btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+              </div>
+          </div>
+      </div>
+
+      <div class="container-fluid1">
+        <footer class="bg-dark text-center text-lg-start text-white">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Facultad de Tecnología</h5>
+    
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>AV. Maximio Victoria 604</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>S. F. del Valle de Catamarca</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>CP: 4700</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Departamentos</h5>
+    
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Tecnología</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Ciencias Aplicadas</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>SIU GUARANI</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Aula Virtual </a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+    
+           
+    
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CONTACTO</h5>
+    
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Telefono: 0383 443-5112</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Instagram</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+    
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2021 Copyright:
+            <a class="text-white" href="ProgrIII">Programación III</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+    
+      </div>
+
     </body>
-
-
 
 </html>
