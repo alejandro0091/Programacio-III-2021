@@ -1,0 +1,26 @@
+function onChangeFecha(){
+    let f1 = document.getElementById("fechaInicio");
+    let f2 = document.getElementById("fechaFin");
+
+    if(f1.value > f2.value && f2.value !=''){
+
+        alert("La fecha de Incio no puede ser Posterior a la fecha de Fin del Curso");
+        f2.value= f1.value;
+
+    }
+
+}
+
+function comparacion(){
+    var minima= document.getElementById("cantMin");
+    var maxima= document.getElementById("cantMax");
+
+    if(minima.value >= maxima.value && maxima.value !=''){
+
+        alert("La cantidad minima no puede ser igual o superior a la cantidad maxima");
+        minima.value="";
+        maxima.value="";
+        
+    }
+
+}
