@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="../css/estilo.css">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+          </script>
+
+    </head>
+    <body class = "contenedor-acceso">
+
+        <div class = "login-box">
+
+           <img class="avatar" src="../css/logoFacu.png" width ="48" alt = "">
+                 <!--Login-->
+                    <form action ="" method="POST" class = "form" id="form">
+
+                        <h1>Acceso </h1>
+
+                            <label for="email">Correo Electrónico </label>
+                            <input id= "email" type="email" required placeholder="Ingrese su email" class="form-control" name="email">
+
+                             <label for="Password"> Contraseña </label>
+                             <input id= "Password" type="Password" required placeholder="Ingrese su contraseña" class="form-control" name="Password">
+
+                             <button type="submit" value = "Iniciar Sesion"> Iniciar Sesion</button>
+                             <p class="warnings" id="warnings"></p>
+
+                            <a href = "#">Si no tienes cuenta, Regístrate</a> <br>
+                            <a href="#"> Recuperar Contraseña</a>
+
+                    </form>
+                </div>
+
+    </body>
+
+    <footer style="text-align: center;">Almonacid -- Gramajo -- Leiva</footer>
+</html>
