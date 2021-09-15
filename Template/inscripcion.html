@@ -78,46 +78,46 @@
                     Ingrese los Datos Solicitados
                 </div>
                 <div class="card-body">
-                    <form action="pago.html" method="post" class="row g-3" enctype="multipart/form-data">
+                    <form action="./pago/pago.html" method="post" class="row g-3" enctype="multipart/form-data">
                         <div class="col-md-4">
                             <label for="cuil" class="form-label">Cuil</label>
-                            <input type="text" class="form-control" id="cuil" placeholder="Ingrese Su CUIL sin Guiones">
+                            <input type="text" class="form-control" id="cuil" placeholder="Ingrese Su CUIL sin Guiones"required>
                         </div>
                         <div class="col-md-4">
                             <label for="nombreApellido" class="form-label">Nombre y Apellido</label>
-                            <input type="text" class="form-control" id="nombreApellido" placeholder="Nombre Completo">
+                            <input type="text" class="form-control" id="nombreApellido" placeholder="Nombre Completo" required>
                         </div>
                         <div class="col-md-4">
                             <label for="telefono" class="form-label">Telefono</label>
-                            <input type="text" class="form-control" id="telefono" placeholder="0000-000000">
+                            <input type="text" class="form-control" id="telefono" placeholder="0000-000000"required>
                         </div>
                         <div class="col-md-4">
                             <label for="calle" class="form-label">Calle</label>
-                            <input type="text" class="form-control" id="calle" placeholder="Nombre de la calle">
+                            <input type="text" class="form-control" id="calle" placeholder="Nombre de la calle"required>
                         </div>
                         <div class="col-md-4">
                             <label for="numero" class="form-label">N°Vivienda</label>
-                            <input type="number" class="form-control" id="numero" placeholder="Numero de vivienda">
+                            <input type="number" class="form-control" id="numero" placeholder="Numero de vivienda"required>
                         </div>
                         <div class="col-md-4">
                             <label for="localidad" class="form-label">Localidad</label>
-                            <input type="text" class="form-control" id="localidad" placeholder="Localidad">
+                            <input type="text" class="form-control" id="localidad" placeholder="Localidad"required>
                         </div>
                         <div class="col-md-4">
                             <label for="departamento" class="form-label">Departamento</label>
-                            <input type="text" class="form-control" id="departamento" placeholder="Departamento">
+                            <input type="text" class="form-control" id="departamento" placeholder="Departamento"required>
                         </div>
                         <div class="col-md-4">
                             <label for="provincia" class="form-label">Provincia</label>
-                            <input type="text" class="form-control" id="provincia" placeholder="Provincia">
+                            <input type="text" class="form-control" id="provincia" placeholder="Provincia"required>
                         </div>
                         <div class="col-md-4">
                             <label for="email" class="form-label">Correo Electronico</label>
-                            <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com">
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com"required>
                         </div>
                         <div class="col-md-4">
                             <label for="sexo" class="form-label">Sexo</label>
-                            <select id="sexo" class="form-select">
+                            <select id="sexo" class="form-select" required>
                                 <option selected>Choose...</option>
                                 <option value="femenino">Femenino</option>
                                 <option value="masculino">Masculino</option>
@@ -125,11 +125,11 @@
                         </div>
                         <div class="col-md-4">
                             <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
-                            <input type="date" class="form-control" id="nacimiento">
+                            <input type="date" class="form-control" id="nacimiento" required>
                         </div>
                         <div class="col-md-4">
                             <label for="estadoCivil" class="form-label">Estado Civil</label>
-                            <select id="estadoCivil" class="form-select">
+                            <select id="estadoCivil" class="form-select" required>
                                 <option value="c">Casado/a</option>
                                 <option value="s">Soltero/a</option>
                                 <option value="d">Divorciado/a</option>
@@ -137,23 +137,22 @@
                         </div>
                         <div class="col-md-4" >
                             <label for="categoria" class="form-label">Categoria</label>
-                            <select id="categoria" class="form-select" onchange="{tipoCategoria()}">
+                            <select id="categoria" class="form-select" onchange="{tipoCategoria()}" required>
                                 <option value="alumno">Alumno</option>
                                 <option value="docente">Docente</option>
                             </select>
                         </div>
                         <div class="col-md-4" style="display: none;" id="div1" >
                             <label for="curriculum" class="form-label">Curriculum</label>
-                            <input type="file" class="form-control" id="curriculum">
+                            <input type="file" class="form-control" id="curriculum" >
                         </div>
                         <div class="col-md-4" style="display: none;" id="div2" >
                             <label for="inicioFacultad" class="form-label">Inicio en la Facultad</label>
-                            <input type="date" class="form-control" id="inicioFacultad">
+                            <input type="date" class="form-control" id="inicioFacultad" >
                         </div>
                         <div class="col-12">
                             <button type="reset" class="btn btn-outline-dark botones">Cancelar</button>
                             <button type="submit" class="btn btn-outline-dark botones">Inscripcion</button>
-                            
                           </div>
                     </form>
                 </div>

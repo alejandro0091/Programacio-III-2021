@@ -164,3 +164,12 @@ width: 100px;
     color: #B06AB3;
     padding-top: 20px;
  }
+
+ iframe:focus {
+    outline: none;
+  }
+  
+  iframe[seamless] {
+    display: block;
+    overflow: hidden;
+  }
